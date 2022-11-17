@@ -1,0 +1,7 @@
+./tmp_data
+./tmp_img
+./tmp_net
+./__pycache__
+./dataset/__pycache__
+./results
+./.ipynb_checkpoints
