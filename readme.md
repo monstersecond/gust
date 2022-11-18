@@ -5,6 +5,10 @@
 
 Dynamically grouping sensory information into structured entities is essential for understanding the world of combinatorial nature. However, the grouping ability and therefore combinatorial generalization are still challenging artificial neural networks. Inspired by the evidence that successful grouping is indicated by neuronal coherence in the human brain, we introduce GUST (Grouping Unsupervisely by Spike Timing network), an iterative network architecture with biological constraints to bias the network towards a dynamical state of neuronal coherence that softly reflects the grouping information in the temporal structure of its spiking activity. We evaluate and analyze the model on synthetic datasets. Interestingly, the segregation ability is directly learned from superimposed stimuli with a succinct unsupervised objective. Two learning stages are present, from coarsely perceiving global features to additionally capturing local features. Further, the learned symbol-like building blocks can be systematically composed to represent novel scenes in a bio-plausible manner.
 
+An example video of binding process is as follows (Each figure in the animation shows the spike firing activity (in SCS) during the binding process of a specific input image):
+
+https://user-images.githubusercontent.com/50747459/202335770-a05ac897-4200-45a2-b424-2c0203c512fd.mp4
+
 <video src=".//images//spike_all.mp4"></video>
 
 ## 2. Code
