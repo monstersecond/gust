@@ -58,9 +58,6 @@ def k_medoids(spk_to_copied, label, show=True, tight=False, back=10, q=3):
 
 def ami_score(true_groups, predicted):
     idxs = np.where(true_groups != 0.0)[0]
-    print(idxs)
-    print(true_groups[idxs].shape)
-    print(predicted[idxs].shape)
     score = adjusted_mutual_info_score(true_groups[idxs], predicted[idxs])
     return score
 
