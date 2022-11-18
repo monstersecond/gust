@@ -26,7 +26,7 @@ def gain_ami_syn_score():
     spks, hidden, rfr, ctx, spk_all, _ = net(test_data, hidden, rfr, IT=30, device=device)
     res = []
     res2 = []
-    for i in range(0, 1):
+    for i in range(1, spk_all.shape[0]):
         pred, inertia = k_medoids(spk_all[i, :, :].squeeze().detach().cpu(), test_label[0], show=False, tight=True)
         ami = ami_score(test_label[0], pred.reshape(-1,))
         idx = np.where(test_label[0] > 0)[0]
